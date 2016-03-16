@@ -23,7 +23,6 @@ public class DrawGC extends AbstractEntryPoint {
     Canvas canvas = new Canvas( parent, SWT.NONE );
 
     canvas.addPaintListener( new PaintListener() {
-
       public void paintControl( PaintEvent event ) {
         // event.gc.setClipping(100,100,200, 200);
         drawCar( event.gc, 500, 200 );
@@ -33,7 +32,6 @@ public class DrawGC extends AbstractEntryPoint {
         drawCar( event.gc, 900, 200 );
         transform.identity();
         transform.dispose();
-
       }
     } );
   }
@@ -66,7 +64,6 @@ public class DrawGC extends AbstractEntryPoint {
     gc.drawOval( x - 100, y + 125, 70, 70 );
     gc.fillOval( x - 100, y + 125, 70, 70 );
     circleColor.dispose();
-
   }
 
 }
